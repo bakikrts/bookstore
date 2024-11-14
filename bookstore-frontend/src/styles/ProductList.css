@@ -1,0 +1,48 @@
+/* Product List Container for displaying products */
+.products-list-duzen{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #f4f4f9; /* Hafif gri arka plan */
+    justify-content: center; /* Yatay olarak ortalar */
+    align-items: center;
+}
+
+.header-options {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 75px;
+    background-color:#f4f4f4 ;
+
+
+}
+
+.sort-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.sort-options label {
+    font-weight: bold;
+    color: #264653;
+}
+
+.sort-options select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: white;
+    color: #264653;
+    transition: background-color 0.3s ease;
+}
+
+.sort-options select:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}

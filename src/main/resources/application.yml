@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: bookstore
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://localhost:5432/bookstore
+    username: postgres
+    password: Karatas1008
+
+server:
+  port: 8083

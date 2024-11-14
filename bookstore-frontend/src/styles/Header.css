@@ -1,0 +1,172 @@
+/* Genel Ayarlar */
+.header {
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Logo, Arama Çubuğu ve Ekstra Butonlar */
+.logo-search {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E9F5F2; /* Açık mavi-yeşil arka plan */
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+.logo {
+    flex: 1;
+    text-align: left;
+    border-radius: 20%;
+    object-fit: cover;
+}
+
+.logo h1 {
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    color: #264653; /* Koyu yeşil-mavi */
+    line-height: 1.6;
+    font-weight: 800;
+    font-style: italic;
+    padding-left: 90px;
+}
+
+.search-bar {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 280px;
+    gap: 10px;
+    height: 70px;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 450px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #F0F9F7, #D1E8E4); /* Açık yeşil degrade */
+    box-shadow: 2px 2px 5px rgba(1, 1, 1, 0.1), -2px -2px 5px rgba(255, 255, 255, 0.3);
+    color: #264653;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+
+.search-bar input::placeholder {
+    color: #2A9D8F;
+    opacity: 0.8;
+}
+
+.search-bar input:focus {
+    outline: none;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1), -3px -3px 7px rgba(255, 255, 255, 0.4);
+}
+
+.search-bar button {
+    padding: 12px 30px;
+    background: linear-gradient(145deg, #2A9D8F, #21918D); /* Canlı yeşil degrade */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.08), -2px -2px 5px rgba(255, 255, 255, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-bar button:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1), -3px -3px 7px rgba(255, 255, 255, 0.4);
+}
+
+.search-bar button:active {
+    transform: scale(0.95);
+}
+
+/* "Bana Özel" ve "Sepetim" Butonları */
+.extra-buttons {
+    display: flex;
+    gap: 15px;
+    padding-right: 32px;
+}
+
+.extra-buttons button {
+    background-color: #2A9D8F; /* Canlı yeşil */
+    color: #FFFFFF;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.extra-buttons button:hover {
+    background-color: #21918D; /* Daha koyu yeşil */
+    color: #FFFFFF;
+}
+
+/* Navigasyon Menüsü */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF; /* Beyaz arka plan */
+    color: #2A9D8F; /* Buton yazı rengi olarak yeşil ton */
+    padding: 12px 0;
+    border-top: 2px solid #D1D1D1; /* Üst sınır çizgisi */
+    border-bottom: 2px solid #D1D1D1; /* Alt sınır çizgisi */
+ }
+
+.nav-menu button {
+    display: flex;
+    background: none;
+    border: none;
+    color: #2A9D8F; /* Yeşil tonlu buton yazısı */
+    font-size: 16px;
+    gap: 10px;
+    margin: 0 50px;
+    cursor: pointer;
+    padding: 5px 20px; /* Buton için biraz iç boşluk */
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+.nav-menu button:hover {
+    color: #21918D; /* Hover durumu için koyu yeşil ton */
+    border-bottom: 2px solid #2A9D8F; /* Alt çizgi efekti */
+    padding-bottom: 1px;
+
+}
+
+
+.cart-button-container {
+    position: relative;
+}
+
+.cart-notification {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #F94144; /* Canlı kırmızı */
+    color: white;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.logo a {
+    text-decoration: none;
+}
+.search-bar button:disabled {
+    cursor: default; /* Devre dışı iken fare imlecini değiştirme */
+    pointer-events: none; /* Tıklama olaylarını kaldırır */
+    transition: none; /* Geçişleri devre dışı bırakır */
+    box-shadow: none; /* Gölgeleri kaldırır */
+    transform: none; /* Büyüme/küçülme efektini kaldırır */
+}

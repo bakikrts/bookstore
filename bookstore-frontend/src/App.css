@@ -1,0 +1,35 @@
+/* styles/App.css */
+
+body, html {
+  margin: 0;
+  padding: 100px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color: #A3C6D4;
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  background-color: #A3C6D4
+}
+
+.App {
+  text-align: center;
+  background-color: #A3C6D4;
+}
+
+.App-header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+}

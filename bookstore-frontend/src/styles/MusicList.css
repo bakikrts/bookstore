@@ -1,0 +1,117 @@
+/* Music List Container for displaying music tracks */
+.music-list-duzen{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-list {
+    flex-wrap: wrap;
+    display: flex;
+    background-color: #f4f4f9;
+    justify-content: flex-end;
+}
+
+/* Music Card Component Styles */
+.music-card {
+    background-color: #ffffff;
+    border: 3px solid #e0e0e0;
+    border-radius: 12px;
+    width: 250px;
+    padding: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.music-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.music-card-header {
+    background-color: #004d40; /* Mavi başlık */
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+}
+
+.music-card-body {
+    color: #333;
+    font-size: 1em;
+    text-align: left;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+
+.music-card-body p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.music-card-footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #f4f4f9;
+    border-radius: 0 0 12px 12px;
+}
+
+.music-card-footer button {
+    background-color: #218838; /* Yeşil buton rengi */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+
+
+.music-card-footer button:active {
+    transform: scale(0.95); /* Butona tıklanınca küçülme efekti */
+    background-color: #1c7430; /* Tıklama sonrası daha koyu bir renk */
+}
+
+.music-card-footer button:hover {
+    background-color: #0a5c0a; /* Hover için koyu yeşil */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .music-card {
+        width: calc(33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .music-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .music-card {
+        width: calc(100% - 20px);
+    }
+}
+
+.music-card-image{
+    width: 100%; /* Kartın genişliğini doldur */
+    max-width: 300px; /* Maksimum genişlik */
+    height: 260px; /* Yüksekliği orantılı olarak ayarla */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}

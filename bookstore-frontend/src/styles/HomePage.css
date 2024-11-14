@@ -1,0 +1,25 @@
+/* HomePage.css */
+
+.home-page {
+    display: flex;
+    justify-content: center; /* Ortalamak için */
+    padding: 10px;
+
+}
+
+.campaign-container {
+    display: flex;
+    max-width: 900px; /* İsteğe bağlı: Konteyner genişliğini ayarlamak için */
+}
+
+.campaign-image {
+    width: 680px;
+    height: 590px;
+    object-fit: fill;
+
+}
+
+/* Son resmin sağındaki boşluğu kaldırmak için */
+.campaign-container .campaign-image:last-child {
+    margin-right: 0;
+}
